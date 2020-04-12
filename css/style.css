@@ -1,0 +1,71 @@
+body {
+    font-family: Lato, sans-serif;
+}
+
+/* Container */
+
+.container-callout {
+    background: url("../img/whiskey.jpg") no-repeat top left fixed; /* make sure all things are on the backgound line */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative; /*children are positioned to this */
+}
+
+.opaque-overlay {
+    position: absolute; /*posisiton is related to the container-callout */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.container-quotes {}
+
+.container-features {}
+
+/* Jumbotron - callout content - overides bootstrap? */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.jumbotron .lead {
+    color: #99a1a9;
+}
+
+/* NavBar */
+
+@media only screen and (min-width: 576px) { /*only make navbar fixed when desktop size, not phone size */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+}
+
+
+/* Button */
+
+.btn--su {
+    font-weight: bold;
+    background-color: #a7520f;
+    border-color: #a7520f;
+    border-radius: 15px;
+}
